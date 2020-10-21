@@ -64,8 +64,11 @@ pip install indodax
    >>> a.trade_sell('btc', '190000000', '0.005') # anggap saja saya menjual BTC di harga 190Juta
    ...
    ```
+  ## Cencle Order
+  Disini menggunakan 2 fungsi yaitu ```cencle_order_buy(coin, order_id, idr_or_btc='idr')``` dan ```cencle_order_sell(coin, order_id, idr_or_btc='idr')```. ```order_id``` dari ```open_order(...)```.
   
-
+  
+  
 Jika anda suka dengan modul ini anda bisa donasi di:
 DOGECOIN: D7rzpq91xmUVkER6E1ndfinRjRS4jvBkgV
 LTC     : M9nQQZXwHQaoNStJrBcr6UfdCqx2RJHz5e
