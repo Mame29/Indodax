@@ -1,6 +1,8 @@
-[pypi.org](https://pypi.org/manage/project/indodax/releases/)
-
 # Indodax
+
+[![PyPI Version](https://pypi.org/manage/project/indodax)]
+
+
 Modul ini untuk trading di indodax
 
 Jika anda suka dengan modul ini anda bisa donasi di:
