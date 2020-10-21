@@ -67,8 +67,28 @@ pip install indodax
   ## Cencle Order
   Disini menggunakan 2 fungsi yaitu ```cencle_order_buy(coin, order_id, idr_or_btc='idr')``` dan ```cencle_order_sell(coin, order_id, idr_or_btc='idr')```. ```order_id``` dari ```open_order(...)```.
   
+   ### Buy
+   ```sh
+   >>> a.cencle_order_buy('btc', '12345') # Kalau order id-nya benar, akan ada result succses = 1
+   ...
+   ```
+   
+   ### Sell
+   ```sh
+   >>> a.cencle_order_sell('btc', '12345') # Hampir sama dengan Buy, tapi tergantung type pembelian atau penjualan
+   ...
+   ```
+   
+  ## Withdraw
+  fungsi withdraw ```withdraw(coin, address, amount, memo='', req_id='')```.
   
+  ```sh
+  >>> a.withdraw('doge', 'D7rzpq91xmUVkER6E1ndfinRjRS4jvBkgV', '100') # memo hanya untuk address yg menggunakan memo
+  ...
+  ```
   
+# Donate
 Jika anda suka dengan modul ini anda bisa donasi di:
-DOGECOIN: D7rzpq91xmUVkER6E1ndfinRjRS4jvBkgV
-LTC     : M9nQQZXwHQaoNStJrBcr6UfdCqx2RJHz5e
+
+DOGE : D7rzpq91xmUVkER6E1ndfinRjRS4jvBkgV
+LTC  : M9nQQZXwHQaoNStJrBcr6UfdCqx2RJHz5e
