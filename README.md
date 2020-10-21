@@ -1,3 +1,5 @@
+[Github-flavored Markdown](https://pypi.org/manage/project/indodax/releases/)
+
 # Indodax
 Modul ini untuk trading di indodax
 
