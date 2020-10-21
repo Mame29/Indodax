@@ -89,7 +89,11 @@ pip install indodax
   
 # Donate
 Jika anda suka dengan modul ini anda bisa donasi di bawah ini
+
 BTC    : 3BqqfUGaARBBCkMN6w6nV7hYjikvac3dJ4
+
 BCHABC : qzdt37fmnftrm8xr50vxza640f48sfnlyqlsfjpyzk
+
 DOGE   : D7rzpq91xmUVkER6E1ndfinRjRS4jvBkgV
+
 LTC    : M9nQQZXwHQaoNStJrBcr6UfdCqx2RJHz5e
