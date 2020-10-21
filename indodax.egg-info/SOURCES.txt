@@ -1,0 +1,9 @@
+README.md
+setup.py
+indodax/Indodax.py
+indodax/Price.py
+indodax/__init__.py
+indodax.egg-info/PKG-INFO
+indodax.egg-info/SOURCES.txt
+indodax.egg-info/dependency_links.txt
+indodax.egg-info/top_level.txt

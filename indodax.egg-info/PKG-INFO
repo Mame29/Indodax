@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: indodax
+Version: 1.0
+Summary: paket ini untuk jual beli di indodax
+Home-page: https://github.com/Mame29/Indodax
+Author: Mame29
+Author-email: author@example.com
+License: UNKNOWN
+Description: # indodax
+        Modul ini untuk trading di indodax
+        
+        Jika anda suka dengan modul ini anda bisa donasi di:
+        DOGECOIN: D7rzpq91xmUVkER6E1ndfinRjRS4jvBkgV
+        LTC     : M9nQQZXwHQaoNStJrBcr6UfdCqx2RJHz5e
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
