@@ -1,6 +1,6 @@
 # Indodax
 
-[![PyPI Version](https://pypi.org/project/indodax)]
+[![PyPI version](https://pypi.org/project/indodax)]
 
 
 Modul ini untuk trading di indodax
