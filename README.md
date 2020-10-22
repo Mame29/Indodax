@@ -7,7 +7,7 @@ Modul ini untuk trading di indodax
 pip install indodax
 ```
 # Cara Penggunaan
-  ## melihat harga
+  ## Melihat harga
 
   ```sh
   $ python
