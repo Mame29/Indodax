@@ -50,7 +50,7 @@ pip install indodax
   ...
   ```
   ## Trade Buy/Sell
-  Pemanggilan fungsi trade, fungsi trade ada 2 yaitu ```trade_buy(coin, diharga, jumlah, idr_or_btc='idr')``` dan ```trade_sell(coin, diharga, jumlah, idr_or_btc='idr')```. variable ```coin``` adalah jenis qurency, variable ```diharga``` adalah harga qurency-nya, variable ```jumlah``` adalah anda nilai pembelian/penjualan, ```idr_or_btc='idr'``` abaikan jika IDR
+  Pemanggilan fungsi trade, fungsi trade ada 2 yaitu ```trade_buy(coin, diharga, jumlah, idr_or_btc='idr')``` dan ```trade_sell(coin, diharga, jumlah, idr_or_btc='idr')```. variable ```coin``` adalah jenis qurency, variable ```diharga``` adalah harga qurency-nya, variable ```jumlah``` adalah nilai pembelian/penjualan, ```idr_or_btc='idr'``` abaikan jika IDR
    ### Buy
     
    ```sh
