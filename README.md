@@ -7,7 +7,7 @@ Modul ini untuk trading di indodax
 pip install indodax
 ```
 # Cara Penggunaan
-  ## Melihat harga
+  ## Melihat Harga
 
   ```sh
   $ python
@@ -37,14 +37,14 @@ pip install indodax
   ...
   ```
   
-  ## Melihat Order yang Baru/Di Tahan
+  ## Melihat Order Baru/Di Tahan
   ```idr_or_btc``` adalah variable dimana anda membeli/menjual dengan BTC atau IDR pilihannya hanya 2 saja, tetapi default   adalah IDR. jika anda membeli/menjual dengan IDR maka ```idr_or_btc``` abaikan saja.
   ```sh
   >>> a.open_order('btc', idr_or_btc='idr') # Contoh saya membeli BTC, disini anda akn melihat order id anda
   ...
   ```
 
-  ## Melihat riwayat order
+  ## Melihat Riwayat Order
   ```sh
   >>> a.order_history('btc') # Anggap saja semua order terlihat
   ...
