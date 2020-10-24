@@ -5,9 +5,9 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="indodax",
-    version="1.0",
+    version="1.1",
     author="Mame29",
-    author_email="author@example.com",
+    author_email="evanr0240@gmail.com",
     description="paket ini untuk jual beli di indodax",
     long_description=long_description,
     long_description_content_type="text/markdown",
