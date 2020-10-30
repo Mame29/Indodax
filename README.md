@@ -14,7 +14,7 @@ pip install indodax
   Python 3.8.5 (default, Jul 28 2020, 12:59:40) 
   [GCC 9.3.0] on linux
   Type "help", "copyright", "credits" or "license" for more information.
-  >>> from indodax.Indodax import indodax
+  >>> from indodax import indodax
   >>> indodax.get_price('btc') #contoh melihat harga BTC
   {'ticker': {'high': '186608000', 'low': '173463000', 'vol_btc': '277.39109788', 'vol_idr': '49592483275', 'last':   '186306000', 'buy': '186305000', 'sell': '186306000', 'server_time': 1603298398}}
   ```
