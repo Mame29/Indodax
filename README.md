@@ -80,7 +80,7 @@ pip install indodax
    ```
    
   ## Withdraw
-  fungsi withdraw ```withdraw(coin, address, amount, memo='', req_id='')```.
+  fungsi withdraw ```withdraw(coin, address, amount, memo='', req_id='')```. Fungsi ini membutuhkan urlcallback agar dapat bekerja dengan baik.
   
   ```sh
   >>> a.withdraw('doge', 'D7rzpq91xmUVkER6E1ndfinRjRS4jvBkgV', '100') # memo hanya untuk address yg menggunakan memo
