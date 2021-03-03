@@ -24,7 +24,7 @@ class indodax:
     url = 'https://indodax.com/tapi/'
 
     kwargs['method'] = method
-    kwargs['nonce'] = int(time.time())
+    kwargs['nonce'] = int(time.time().1000)
 
     post_data = kwargs
 
