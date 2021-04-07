@@ -1,4 +1,4 @@
-import json,os,sys,time,urllib
+import json,os,sys,datetime,urllib
 import requests as c
 from hmac import HMAC
 from indodax.Price import price
@@ -24,7 +24,7 @@ class indodax:
     url = 'https://indodax.com/tapi/'
 
     kwargs['method'] = method
-    kwargs['nonce'] = int(time.time())
+    kwargs['nonce'] = int(datetime.datetime.now().timestamp()*1000)
 
     post_data = kwargs
 
