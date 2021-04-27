@@ -110,7 +110,7 @@ class indodax:
     return self.query('getOrder', **m)
 
 
-  def cencel_order_buy(self, coin, order_id, idr_or_btc='idr'):
+  def cancel_order_buy(self, coin, order_id, idr_or_btc='idr'):
     pair = coin+'_'+idr_or_btc
     m = {
       'pair': pair,
@@ -120,7 +120,7 @@ class indodax:
     return self.query('cancelOrder', **m)
 
 
-  def cencel_order_sell(self, coin, order_id, idr_or_btc='idr'):
+  def cancel_order_sell(self, coin, order_id, idr_or_btc='idr'):
     pair = coin+'_'+idr_or_btc
     m = {
       'pair': pair,

@@ -64,18 +64,18 @@ pip install indodax
    >>> a.trade_sell('btc', '190000000', '0.005') # anggap saja saya menjual BTC di harga 190Juta
    ...
    ```
-  ## Cencle Order
-  Disini menggunakan 2 fungsi yaitu ```cencle_order_buy(coin, order_id, idr_or_btc='idr')``` dan ```cencle_order_sell(coin, order_id, idr_or_btc='idr')```. ```order_id``` dari ```open_order(...)```.
+  ## cancel Order
+  Disini menggunakan 2 fungsi yaitu ```cancel_order_buy(coin, order_id, idr_or_btc='idr')``` dan ```cancel_order_sell(coin, order_id, idr_or_btc='idr')```. ```order_id``` dari ```open_order(...)```.
   
    ### Buy
    ```sh
-   >>> a.cencle_order_buy('btc', '12345') # Kalau order id-nya benar, akan ada result succses = 1
+   >>> a.cancel_order_buy('btc', '12345') # Kalau order id-nya benar, akan ada result succses = 1
    ...
    ```
    
    ### Sell
    ```sh
-   >>> a.cencle_order_sell('btc', '12345') # Hampir sama dengan Buy, tapi tergantung type pembelian atau penjualan
+   >>> a.cancel_order_sell('btc', '12345') # Hampir sama dengan Buy, tapi tergantung type pembelian atau penjualan
    ...
    ```
    
