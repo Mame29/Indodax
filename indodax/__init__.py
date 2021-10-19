@@ -1,7 +1,9 @@
-import json,os,sys,datetime,urllib
+import json,time,urllib
 import requests as c
 from hmac import HMAC
 from indodax.Price import price
+
+__version__ = 1.3
 
 class indodax:
   '''Ini dirancang agar mempermudah jual beli mata uang digital di indodax ambil key dan secret di akun anda
@@ -24,9 +26,7 @@ class indodax:
     url = 'https://indodax.com/tapi/'
 
     kwargs['method'] = method
-    kwargs['nonce'] = int(datetime.datetime.now().timestamp()*1000)
-
-    post_data = kwargs
+    kwargs['nonce'] = int(time.time()*1000000)
 
     sign = HMAC(self.secret, urllib.parse.urlencode(kwargs).encode('utf-8'), 'sha512').hexdigest()
     headers = {
@@ -39,7 +39,7 @@ class indodax:
     js = json.dumps(json.loads(r.text), sort_keys=False, indent=4)
     return js
 
-
+  @staticmethod
   def get_price(coin):
     a = price.price(coin)
     return a
@@ -109,6 +109,19 @@ class indodax:
 
     return self.query('getOrder', **m)
 
+
+  def instan_trade(self, coin, jumlah, type: str):
+      '''instan_trade(coin, jumlah, type) digunakan untuk order secara instan.
+      cara penggunaan `instan_trade("trx", 10000, 'buy or sell')`'''
+      jk = indodax.get_price(coin)
+      jk = jk['ticker']
+      buy = jk['buy']
+      sell = jk['sell']
+      if type == 'buy':
+          return self.trade_buy(coin, buy, jumlah)
+
+      if type == 'sell':
+          return self.trade_sell(coin, sell, jumlah)
 
   def cancel_order_buy(self, coin, order_id, idr_or_btc='idr'):
     pair = coin+'_'+idr_or_btc
