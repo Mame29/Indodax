@@ -5,12 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="indodax",
-    version="1.1",
+    version="1.3",
     author="Mame29",
     author_email="evanr0240@gmail.com",
     description="paket ini untuk jual beli di indodax",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    install_requires='requests',
     url="https://github.com/Mame29/Indodax",
     packages=setuptools.find_packages(),
     classifiers=[

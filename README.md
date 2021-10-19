@@ -1,5 +1,5 @@
 # Indodax
-[PyPI version 1.1](https://pypi.org/project/indodax/1.1/)
+[PyPI version 1.3](https://pypi.org/project/indodax/1.3/)
 Modul ini untuk trading di indodax
 
 # Install
@@ -64,7 +64,11 @@ pip install indodax
    >>> a.trade_sell('btc', '190000000', '0.005') # anggap saja saya menjual BTC di harga 190Juta
    ...
    ```
-  ## cancel Order
+  ## Instan Order
+  instan_trade(coin, jumlah, type) digunakan untuk order secara instan.
+  cara penggunaan `instan_trade("trx", 10000, 'buy or sell')`
+
+  ## Cancel Order
   Disini menggunakan 2 fungsi yaitu ```cancel_order_buy(coin, order_id, idr_or_btc='idr')``` dan ```cancel_order_sell(coin, order_id, idr_or_btc='idr')```. ```order_id``` dari ```open_order(...)```.
   
    ### Buy
