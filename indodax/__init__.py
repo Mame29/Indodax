@@ -118,10 +118,10 @@ class indodax:
       buy = jk['buy']
       sell = jk['sell']
       if type == 'buy':
-          return self.trade_buy(coin, buy, jumlah)
+          return self.trade_buy(coin, sell, jumlah)
 
       if type == 'sell':
-          return self.trade_sell(coin, sell, jumlah)
+          return self.trade_sell(coin, buy, jumlah)
 
   def cancel_order_buy(self, coin, order_id, idr_or_btc='idr'):
     pair = coin+'_'+idr_or_btc
