@@ -3,7 +3,7 @@ import requests as c
 from hmac import HMAC
 from indodax.Price import price
 
-__version__ = 1.3
+__version__ = '1.3.1'
 
 class indodax:
   '''Ini dirancang agar mempermudah jual beli mata uang digital di indodax ambil key dan secret di akun anda
