@@ -28,7 +28,7 @@ class indodax:
     kwargs['method'] = method
     kwargs['nonce'] = int(time.time()*1000000)
 
-    sign = HMAC(self.secret, urllib.parse.urlencode(kwargs).encode('utf-8'), 'sha512').hexdigest()
+    sign = HMAC(self.secret.encode('utf-8'), urllib.parse.urlencode(kwargs).encode('utf-8'), 'sha512').hexdigest()
     headers = {
       'Sign': sign,
       'Key': self.key
@@ -36,7 +36,7 @@ class indodax:
 
     s = c.Session()
     r = s.post(url, headers=headers, data=kwargs)
-    js = json.dumps(json.loads(r.text), sort_keys=False, indent=4)
+    js = json.dumps(json.loads(r.text))
     return js
 
   @staticmethod
