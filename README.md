@@ -1,5 +1,5 @@
 # Indodax
-[PyPI version 1.3](https://pypi.org/project/indodax/1.3/)
+[PyPI version 1.3.2](https://pypi.org/project/indodax/1.3.2/)
 Modul ini untuk trading di indodax
 
 # Install

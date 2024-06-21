@@ -3,7 +3,7 @@ import requests as c
 from hmac import HMAC
 from indodax.Price import price
 
-__version__ = '1.3.1'
+__version__ = '1.3.2'
 
 class indodax:
   '''Ini dirancang agar mempermudah jual beli mata uang digital di indodax ambil key dan secret di akun anda
@@ -22,7 +22,7 @@ class indodax:
     self.secret = secret
 
 
-  def query(self, method, **kwargs: dict):
+  def query(self, method, **kwargs: dict) -> dict:
     url = 'https://indodax.com/tapi/'
 
     kwargs['method'] = method
@@ -36,8 +36,8 @@ class indodax:
 
     s = c.Session()
     r = s.post(url, headers=headers, data=kwargs)
-    js = json.dumps(json.loads(r.text), sort_keys=False, indent=4)
-    return js
+    # js = json.dumps(json.loads(r.text), sort_keys=False, indent=4)
+    return r.json()
 
   @staticmethod
   def get_price(coin):
